@@ -30,15 +30,6 @@ window.onload = function () {
             game.rootScene.addChild(floor);
         }
 
-        wall = new PhyBoxSprite(200, 16, enchant.box2d.STATIC_SPRITE, 100, 1.0, 0, true);
-        wall.image = game.assets["img/ground.jpg"];
-        wall.position = { x: window.innerWidth / 2 , y: 300 };
-        game.rootScene.addChild(wall);
-        wall = new PhyBoxSprite(200, 16, enchant.box2d.STATIC_SPRITE, 100, 1.0, 0, true);
-        wall.image = game.assets["img/ground.jpg"];
-        wall.position = { x: window.innerWidth / 2 , y: 299 };
-        game.rootScene.addChild(wall);
-
         // 攻撃
         var beamMax = 3;
 
