@@ -19,7 +19,7 @@ window.onload = function () {
 
 
     game.onload = function () {
-        mechasonWorld = new PhysicsWorld(0, 5);
+        mechasonWorld = new PhysicsWorld(0, 10);
 
         var i, floor, wall, zou, beam;
         for(i = 0; i < 100; i++){
