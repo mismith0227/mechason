@@ -145,7 +145,7 @@ window.onload = function () {
             physicsWorld.step(game.fps);
             if(game.frame % game.fps === 0){
                 // ぞう1
-                var zou = new PhyCircleSprite(16, enchant.box2d.DYNAMIC_SPRITE, 0.05, 0.9, 0.3, true);
+                var zou = new PhyCircleSprite(14, enchant.box2d.DYNAMIC_SPRITE, 0.05, 3, 0.5, true);
                 zou.image = game.assets["img/zou.png"];
                 zou.frame = 4;
                 zou.position = { x: 0, y: 120 };
@@ -156,7 +156,7 @@ window.onload = function () {
                 });
 
                 // ぞう2
-                var zou2 = new PhyCircleSprite(16, enchant.box2d.DYNAMIC_SPRITE, 0.05, 0.9, 0.3, true);
+                var zou2 = new PhyCircleSprite(14, enchant.box2d.DYNAMIC_SPRITE, 0.05, 0.9, 0.3, true);
                 zou2.image = game.assets["img/zou2.png"];
                 zou2.frame = 2;
                 zou2.position = { x: screen_width, y: Math.random() * screen_height };
