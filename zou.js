@@ -3,7 +3,7 @@ enchant();
 
 var screen_width = window.innerWidth;
 var screen_height = window.innerHeight;
-var game, physicsWorld;
+var game, mechasonWorld;
 
 window.onload = function () {
     game = new Game(screen_width, screen_height);
@@ -19,7 +19,7 @@ window.onload = function () {
 
 
     game.onload = function () {
-        physicsWorld = new PhysicsWorld(0, 5);
+        mechasonWorld = new PhysicsWorld(0, 5);
 
         var i, floor, wall, zou, beam;
         for(i = 0; i < 100; i++){
@@ -142,7 +142,7 @@ window.onload = function () {
         game.rootScene.addChild(mechason);
 
         game.rootScene.addEventListener("enterframe", function () {
-            physicsWorld.step(game.fps);
+            mechasonWorld.step(game.fps);
             if(game.frame % game.fps === 0){
                 // ぞう1
                 var zou = new PhyCircleSprite(14, enchant.box2d.DYNAMIC_SPRITE, 0.05, 3, 0.5, true);
