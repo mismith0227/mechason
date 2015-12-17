@@ -17,3 +17,5 @@ PCのキーボードで操作してください。
 当たると飛ばされます。
 
 [Github Page](http://mismith0227.github.io/mechason/)でお楽しみください。
+
+[blog](http://blog.mismithportfolio.com/web/20151218zou)
